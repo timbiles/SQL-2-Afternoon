@@ -1,0 +1,37 @@
+
+-- Practice Nested Queries --
+
+
+-- 1 --
+
+/* select * from Invoice
+where InvoiceId in(select InvoiceId from InvoiceLine where UnitPrice > .99); */
+
+-- 2 --
+
+/* select * from PlaylistTrack
+where PlaylistId in (select PlaylistId from Playlist where name = 'Music'); */
+
+-- 3 -- 
+
+/* select name from track
+where TrackId in (select trackId from PlaylistTrack where playlistId = 5); */
+
+-- 4 --
+
+/* select * from Track
+where GenreId in (select GenreId from Genre where name = 'Comedy'); */
+
+-- 5 --
+
+/* select * from Track
+where AlbumId in (select AlbumId from Album where Title = 'Fireball'); */
+
+-- 6 --
+
+/* select * from Track
+where AlbumId in (select AlbumId from Album where ArtistId in (select ArtistId from Artist where name = 'Queen')); */
+
+
+
+

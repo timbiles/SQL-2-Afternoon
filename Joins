@@ -47,6 +47,3 @@ join album a on a.albumid = t.albumid
 join genre g on g.genreid = t.genreid
 where g.name = 'Alternative'; */
 
-
-
-
