@@ -1,0 +1,14 @@
+-- Use Distinct --
+
+
+-- 1 --
+
+/* select distinct Composer from Track; */
+
+-- 2 --
+
+/* select distinct BillingPostalCode from Invoice; */
+
+-- 3 --
+
+/* select distinct Company from Customer; */

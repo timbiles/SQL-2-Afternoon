@@ -1,0 +1,21 @@
+-- Group By --
+
+-- 1 --
+
+/* select count(*), g.Name from Track t
+join Genre g on g.genreId = t.genreId
+group by g.Name;
+ */
+-- 2 --
+
+/* select count(*), g.name from Track t
+join Genre g on g.genreId = t.genreId
+where g.name = 'Pop' or g.name = 'Rock'
+group by g.Name; */
+
+-- 3 --
+
+/* select count(*), ar.Name from Album al
+join Artist ar on ar.ArtistId = al.ArtistId
+group by ar.Name;
+ */
