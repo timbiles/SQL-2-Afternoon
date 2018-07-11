@@ -1,0 +1,52 @@
+-- Practice Joins -- 
+
+-- 1 --
+
+/* select * from invoice
+join invoiceLine on invoiceLine.invoiceId = invoice.invoiceId
+where unitPrice > .99;
+ */
+ 
+-- 2 --
+
+/* select i.invoicedate, c.firstname, c.lastname, i.total from invoice i
+join customer c on c.customerId = i.customerId; */
+
+-- 3 --
+
+/* select c.firstname, c.lastname, e.firstname, e.lastname from customer c
+join employee e on e.employeeid = c.supportrepid; */
+
+-- 4 --
+
+/* select al.title, ar.name from album al
+join artist ar on ar.artistid = al.artistid; */
+
+-- 5 --
+
+/* select pt.trackid from playlisttrack pt
+join playlist pl on pl.playlistid = pt.playlistid
+where pl.name = 'Music'; */
+
+-- 6 --
+
+/* select t.name from track t
+join playlisttrack pt on pt.playlistid = t.trackid
+where pt.playlistid = 5; */
+
+-- 7 --
+
+/* select t.name, pl.name from track t
+join playlisttrack pt on pt.playlistid = t.trackid
+join playlist pl on pl.playlistid = t.trackid; */
+
+-- 8 --
+
+/* select t.name, a.title, g.name from track t
+join album a on a.albumid = t.albumid
+join genre g on g.genreid = t.genreid
+where g.name = 'Alternative'; */
+
+
+
+
