@@ -1,0 +1,29 @@
+-- Practice Updating Rows --
+
+
+-- 1 --
+
+/* update Customer set Fax = null
+where Fax is not null; */
+
+-- 2 --
+
+/* update Customer set Company = 'Self'
+where Company is null; */
+
+-- 3 --
+
+/* update Customer set LastName = 'Thompson'
+where FirstName = 'Julia' and LastName = 'Barnett'; */
+
+-- 4 --
+
+/* update Customer set SupportRepId = 4
+where Email = 'luisrojas@yahoo.cl';
+ */
+ 
+-- 5 --
+
+/* update Track set Composer = 'The darkness around us'
+where GenreId in (select GenreId from Genre where Name = 'Metal')
+and Composer is null; */
