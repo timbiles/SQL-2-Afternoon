@@ -1,0 +1,51 @@
+-- eCommerce Simulation --
+
+-- 1 --
+
+/* create table users(
+  user_id integer primary key autoincrement,
+  name varchar(200),
+  email varchar(200)
+);
+create table products(
+  products_id integer primary key autoincrement,
+  name varchar(200),
+  price float
+);
+create table orders(
+  orders_id integer primary key autoincrement,
+  user_id integer references users(user_id),
+  products_id integer references products(products_id)
+); */
+
+
+-- 2 --
+
+/* insert into users(name, email)
+values ('Tim', 'timbilestimbiles@gmail.com'),
+('Abul', 'Abul.kanjo@gmail.com'),
+('Harlan', 'harlandheath@gmail.com'); */
+
+/* insert into products(name, price)
+values('Nike Shoes', 60),
+('Oakley Glasses', 200),
+('Target T-shirt', 10); */
+
+/* insert into orders(user_id, products_id)
+values(1, 1),
+(2,2),
+(3,3); */
+
+
+-- 3 --
+
+/* select * from products
+where products_id in(select products_id from orders where orders_id = 1); */
+
+/* select * from orders; */
+
+/* select * from Products; */
+
+/* select * from users; */
+
+/* update orders set users ='id' where users = id; */
